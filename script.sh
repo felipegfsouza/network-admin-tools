@@ -1,6 +1,28 @@
-echo "Ola Mundo"
-echo "teste""
+#!/bin/bash 
+
+Options(){
+    # Desenhar o menu
+}
+
+Install_Programs(){
+# separar quais programas vão precisar ser utilizados
+}
 
 
+Consultation_Manuals(){
+ # Organizar os manuais
+}
 
-# askjdfkls
+Updates(){
+
+}
+
+Upgrades(){
+
+}
+
+Exit_Programs() {
+exit
+}
+
+Options
