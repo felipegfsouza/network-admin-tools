@@ -56,7 +56,7 @@ Para rodar
 
 ## Feedback
 
-Se você tiver algum feedback, por favor nos deixe saber por meio de fake@fake.com
+Se você tiver algum feedback, por favor nos deixe saber por meio de  [PullRequests](https://github.com/felipegfsouza/network-admin-tools/pulls)
 
 
 ## Autores
