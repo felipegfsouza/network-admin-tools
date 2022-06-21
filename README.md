@@ -4,28 +4,27 @@
 Um projeto para administradores de Redes 
 
 
-
 ![Group 9](https://user-images.githubusercontent.com/68368843/173259283-ebf4b637-c26c-4a65-a87e-535419ae3dc4.png)
 
 
 ## Aprendizados
 
-O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e como você superou-os?
+Aprendemos a base do Shell script e suas utilidades no mundo linux 
+e todo o poder dessa ferramenta fantastica editores como Vim Nano 
 
 
 ## Stack utilizada
 
-**Front-end:** React, Redux, TailwindCSS
+**Front-end:** Dialog CLI
 
-**Back-end:** Node, Express
+**Back-end:** Shell
 
 
 ## Funcionalidades
 
-- Temas dark e light
-- Preview em tempo real
-- Modo tela cheia
-- Multiplataforma
+- Ferramentas para o adm de redes
+- Testes de Hardware
+- Testes de Conexão
 
 
 ## Rodando localmente
@@ -33,47 +32,26 @@ O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e 
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/felipegfsouza/network-admin-tools.git
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd my-project
+  cd network-admin-tools 
 ```
 
-Instale as dependências
+De a permissão 
 
 ```bash
-  npm install
+ chmod +x script.sh
 ```
 
-Inicie o servidor
+Para rodar
 
 ```bash
-  npm run start
+ ./filename.sh
 ```
-
-
-## Uso/Exemplos
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Demonstração
-
-Insira um gif ou um link de alguma demonstração
 
 
 ## Feedback
@@ -83,7 +61,12 @@ Se você tiver algum feedback, por favor nos deixe saber por meio de fake@fake.c
 
 ## Autores
 
-- [@katherinepeterson](https://www.github.com/octokatherine)
+- [@felipegfsouza](https://www.github.com/felipegfsouza)
+- [@ElvysStein](https://github.com/ElvysStein)
+- Giovanna Lucio
+- Arthur Silva
+- Bruno Augusto
+
 
 
 ## Licença
