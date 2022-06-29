@@ -36,7 +36,9 @@ case $option in
 
         6) Test_rede ;;
 
-        7) Test_hardware ;;
+        7) Carga_de_trafico ;;
+
+        8) Test_hardware ;;
 
         *) Sair ;;
 
@@ -96,6 +98,23 @@ Test_rede() {
 echo "vamos ver se está pingando"
 timeout 15 ping 8.8.8.8
 echo "está conectado"
+
+}
+
+Carga_de_trafico() {
+echo "Vamos monitorar o trafico "
+echo "você já tem o BMON?[y/n]"
+read pergunta
+if [ $pergunta -eq 'y' ] then
+ bmon 
+elif [ pergunta -eq 'n' ] then
+ figlet instalando
+ sudo apt-get install bmon
+ bmon 
+
+else 
+echo "não conseguimos identificar o bmon tente novamente"
+sleep 5
 
 }
 
