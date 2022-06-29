@@ -1,5 +1,6 @@
 #!/bin/bash 
 
+# Funcao do menu 8 opções
 Menu(){
 echo "|=============================================================|"
 echo "|================ OLÁ $USER SEJÁ BEM VINDO ===================|"
@@ -12,9 +13,10 @@ echo "|         [1] Instalar pacotes                      |"
 echo "|         [2] Instalar programa                     |"
 echo "|         [3] Atualizar  update                     |"
 echo "|         [4] Atualizar  upgrade                    |"
-echo "|         [5] Testes de rede                        |"
-echo "          [6] Testes de Hardware                    |"
-echo "|         [7] Consulta manuais                      |"
+echo "|         [5] Consulta manuais                      |"
+echo "          [6] Teste de Rede                         |"
+echo "|         [7] Testes de Hardware                    |"
+echo "|         [8] Sair.                                 |"
 echo "|                                                   |"
 echo "|___________________________________________________|"
 echo 
@@ -30,7 +32,7 @@ case $option in
 
         4) Upgrades ;;
 
-        5) Atualizacao ;;
+        5) Consultation_Manuals ;;
 
         6) Test_rede ;;
 
@@ -47,7 +49,7 @@ Install_Packages(){
 echo "Digite o pacote que você deseser instalado com .deb no final"
 read nome_do_pacote
 # debian package -i install
-sudo dpkg -i /home/$USER/Downloads/$arqdeb
+sudo dpkg -i /home/$USER/Downloads/$nome_do_pacote
 figlet aguarde
 
 
@@ -72,7 +74,7 @@ echo "Digite o programa que você deseja ver o manual"
 read consulta_programa
 figlet Manual deste comando se divirta
 sleep 5
-man $programa
+man $consulta_programa
 
 }
 
