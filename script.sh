@@ -51,6 +51,8 @@ read nome_do_pacote
 # debian package -i install
 sudo dpkg -i /home/$USER/Downloads/$nome_do_pacote
 figlet aguarde
+sleep 3
+figlet concluido
 
 
 
