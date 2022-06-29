@@ -21,7 +21,7 @@ echo
 echo -n "Qual a opcao desejada ? "
 echo "   "
 read option
-case $opc in
+case $option in
         1) Install_Packages  ;; #arquivos .deb
 
         2) Install_programs ;;
