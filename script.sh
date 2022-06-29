@@ -15,7 +15,7 @@ echo "|         [3] Atualizar  update                     |"
 echo "|         [4] Atualizar  upgrade                    |"
 echo "|         [5] Consulta manuais                      |"
 echo "          [6] Teste de Rede                         |"
-echo "|         [7] Testes de Hardware                    |"
+echo "|         [7] Redes Bmon                            |"
 echo "|         [8] Sair.                                 |"
 echo "|                                                   |"
 echo "|___________________________________________________|"
@@ -101,13 +101,14 @@ echo "está conectado"
 
 }
 
+#  (Bandwidth Monitor) é uma ferramenta semelhante ao Nload. Ela mostra a carga de tráfego em todas as interfaces de rede no sistema
 Carga_de_trafico() {
 echo "Vamos monitorar o trafico "
 echo "você já tem o BMON?[y/n]"
 read pergunta
-if [ $pergunta -eq 'y' ] then
+if [ $pergunta = 'y' ]; then
  bmon 
-elif [ pergunta -eq 'n' ] then
+ elif [ pergunta = 'n' ]; then
  figlet instalando
  sudo apt-get install bmon
  bmon 
@@ -115,6 +116,8 @@ elif [ pergunta -eq 'n' ] then
 else 
 echo "não conseguimos identificar o bmon tente novamente"
 sleep 5
+
+fi
 
 }
 
